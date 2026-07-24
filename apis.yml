@@ -1,8 +1,26 @@
 aid: bioage-labs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bioage-labs.png
 name: BioAge Labs
-description: BioAge Labs is a company surfaced as a portfolio company of a16z, redpoint-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: BioAge Labs (Nasdaq ticker BIOA) is a clinical-stage biopharmaceutical company based in Emeryville,
+  California, developing therapies that target the biology of human aging to treat metabolic diseases such
+  as obesity and its related conditions. Its proprietary discovery platform mines longitudinal human
+  multi-omics data to identify aging-related molecular pathways, which feed a therapeutic pipeline that
+  includes BGE-102, an oral NLRP3 inhibitor aimed at chronic inflammation and cardiovascular risk, and an
+  APJ (apelin receptor) agonist developed as an exercise mimetic for obesity. The company is backed by
+  a16z and Redpoint Ventures and was added to the API Evangelist network as a portfolio-company profile.
+  BioAge Labs publishes no public developer API, documentation, or SDK surface at this time; this profile
+  captures its corporate and web-property identity plus a domain-security probe of its primary web host.
 url: https://raw.githubusercontent.com/api-evangelist/bioage-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +31,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Longevity
+- Aging
+- Metabolic Disease
+- Drug Discovery
+- Obesity
+- Healthcare
+- Multi-omics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/bioage-labs-domain-security.yml
 - type: Website
-  url: http://bioagelabs.com/
+  url: https://bioagelabs.com/
+- type: PrivacyPolicy
+  url: https://bioagelabs.com/privacy-policy
+- type: Blog
+  url: https://ir.bioagelabs.com/news-events/press-releases
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bioage-labs/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
